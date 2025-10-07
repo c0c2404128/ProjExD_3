@@ -157,6 +157,17 @@ class Score:
         self.img = self.fonto.render(f"Score: {self.score}", 0, self.color)
         screen.blit(self.img,self.rct)
 
+class Explosion:
+    """
+    爆発エフェクト
+    """
+    def __init__(self):
+        self.img = self.fonto.render(f"Score: {self.score}", 0, self.color)
+        self.rct = self.img.get_rect()
+        self.rct.center = (100, HEIGHT - 50)  # 画面左下
+
+    # def update(self, screen: pg.Surface):
+
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
     screen = pg.display.set_mode((WIDTH, HEIGHT))    
