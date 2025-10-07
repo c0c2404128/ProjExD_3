@@ -190,7 +190,6 @@ def main():
                 fonto = pg.font.Font(None, 80)
                 txt = fonto.render("Game Over", True, (255, 0, 0))
                 screen.blit(txt, [WIDTH//2-150, HEIGHT//2])
-
                 pg.display.update()
                 time.sleep(1)
                 return
